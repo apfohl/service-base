@@ -9,8 +9,8 @@ applications. This is made possible by utilizing the
 ## Usage
 
 This image can be used as a base image for creating other images containing the
-service applications. Use the `FROM` statement for you **Dockerfile** to inherit
-from the **service-base** image:
+service applications. Use the `FROM` statement for your **Dockerfile** to
+inherit from the **service-base** image:
 
 ```Dockerfile
 FROM apfohl/service-base:latest
@@ -18,7 +18,7 @@ FROM apfohl/service-base:latest
 
 ## Data persistence
 
-In order to persist dynamic data generated inside container created from this
+In order to persist dynamic data generated inside container created by this
 image, a Docker volume or a directory can be mounted inside the container. Every
 dynamic data should reside in a predefined directory provided by the
 **service-base** image. The data directory is `/data`. The **service-base**

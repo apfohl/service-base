@@ -7,7 +7,7 @@ build:
 	@docker build -t $(IMAGE) .
 
 run:
-	@docker run --name=$(CONTAINER) -h base -d $(IMAGE)
+	@docker run --name=$(CONTAINER) -e TZ="Europe/Berlin" -h base -d $(IMAGE)
 
 shell:
 	@docker exec -it $(CONTAINER) sh
